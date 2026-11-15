@@ -59,12 +59,18 @@ O `cd.yml` da base usava runner hospedado do GitHub com SSH, o que exigiria abri
 4. `curl http://localhost/tasks` voltou com a tarefa (id 1).
 
 ## 8. Custos e recursos
-| Recurso | Uso | Custo |
+
+A instância foi parada e reiniciada algumas vezes por limitações do ambiente do laboratório (4 inicializações no total). O tempo ligada foi obtido pelas inicializações registradas no próprio sistema (`journalctl --list-boots`) e totalizou aproximadamente **11,5 horas**. Os valores abaixo são **estimativas** com base nos preços de tabela sob demanda (us-east-1).
+
+| Recurso | Uso | Custo estimado |
 |---|---|---|
-| EC2 t3.micro | [horas de uso] | [preencher: crédito do laboratório ou valor estimado] |
-| EBS 8 GiB | até o encerramento | [preencher] |
-| IP público | associado à instância | [preencher] |
-| GHCR / Actions | plano gratuito | sem custo |
+| EC2 t3.micro (Linux) | 11,5 h ligada | 11,5 h × US$ 0,0104/h ≈ US$ 0,12 |
+| EBS gp3 8 GiB | cerca de 23 h (da criação à exclusão) | 8 GB × US$ 0,08/GB-mês × 23/730 ≈ US$ 0,02 |
+| IPv4 público | 11,5 h associado à instância | 11,5 h × US$ 0,005/h ≈ US$ 0,06 |
+| GHCR / GitHub Actions | repositório público, plano gratuito | sem custo |
+| **Total estimado** | | **≈ US$ 0,20** |
+
+O consumo real foi debitado do orçamento do laboratório: o painel mostrou US$ 28,60 utilizados de US$ 50,00.
 
 Todos os recursos foram **encerrados** ao fim do trabalho: [prints da instância terminada, volumes e runner removido].
 
