@@ -70,7 +70,7 @@ A instância foi parada e reiniciada algumas vezes por limitações do ambiente 
 | GHCR / GitHub Actions | repositório público, plano gratuito | sem custo |
 | **Total estimado** | | **≈ US$ 0,20** |
 
-O consumo real foi debitado do orçamento do laboratório: o painel mostrou US$ 28,60 utilizados de US$ 50,00.
+O consumo real foi debitado do orçamento do laboratório: o painel mostrou US$ 28,60 utilizados de US$ 50,00. O valor do painel acumula todo o uso da conta do laboratório, e não apenas este projeto, por isso é maior que a estimativa acima.
 
 Todos os recursos foram **encerrados** ao fim do trabalho: [prints da instância terminada, volumes e runner removido].
 
