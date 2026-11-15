@@ -87,3 +87,4 @@ Todos os recursos foram **encerrados** ao fim do trabalho: [prints da instância
 | 1 | Pull Request com CI verde e revisão | [[link do PR](https://github.com/evimariia/cloud-pipeline-starter/pull/1)] |
 | 2 | Run de CI aprovado (PR) | [[link](https://github.com/evimariia/cloud-pipeline-starter/actions/runs/43710879313)] |
 | 3 | Run de CD aprovado | [[link](https://github.com/evimariia/cloud-pipeline-starter/actions/runs/43710950985)] |
+| 4 | Pacote no GHCR com tag = SHA do commit | [cloud-pipeline-starter](https://github.com/evimariia/cloud-pipeline-starter/pkgs/container/cloud-pipeline-starter) |
