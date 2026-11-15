@@ -74,14 +74,8 @@ Todos os recursos foram **encerrados** ao fim do trabalho: [prints da instância
 - O IP público da instância mudou entre sessões do laboratório; o deploy pelo runner não depende do IP.
 
 ## 10. Evidências
-| # | Evidência | Link/print |
+| # | Evidência | Link |
 |---|---|---|
-| 1 | Pull Request com CI verde e revisão | [link do PR] |
-| 2 | Run de CI aprovado (PR) | [link] |
-| 3 | Run de CI na `main` publicando a imagem | [link] |
-| 4 | Run de CD aprovado | [link] |
-| 5 | Pacote no GHCR com tag SHA | [print] |
-| 6 | `/health` respondendo | [print] |
-| 7 | Persistência (antes/depois) | [prints] |
-| 8 | Security Group | [print] |
-| 9 | Recursos encerrados | [prints] |
+| 1 | Pull Request com CI verde e revisão | [[link do PR](https://github.com/evimariia/cloud-pipeline-starter/pull/1)] |
+| 2 | Run de CI aprovado (PR) | [[link](https://github.com/evimariia/cloud-pipeline-starter/actions/runs/43710879313)] |
+| 3 | Run de CD aprovado | [[link](https://github.com/evimariia/cloud-pipeline-starter/actions/runs/43710950985)] |
