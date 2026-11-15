@@ -33,9 +33,11 @@ flowchart LR
 | Security Group `cloud-tasks-sg` | entrada: HTTP 80 de `0.0.0.0/0`; SSH 22 apenas do meu IP e do intervalo do EC2 Instance Connect (`18.206.107.24/29`). Nunca `0.0.0.0/0` no SSH |
 | Saída                           | padrão (permite o runner falar com o GitHub e a EC2 baixar a imagem) |
 
-![Detalhes da instância](\docs\images\detalhes_instanciaEC2.png)
-![Grupo de segurança](docs\images\regras_entrada.png)
-![Versão do Docker](docs\images\versao_docker.png)
+![Detalhes da instância](images/detalhes_instanciaEC2.png)
+
+![Grupo de segurança](images/regras_entrada.png)
+
+![Versão do Docker](images/versao_docker.png)
 
 ## 4. Pipeline
 - **CI** em PR: instala dependências, roda `pytest`, faz build Docker. Não publica imagem nem faz deploy.
