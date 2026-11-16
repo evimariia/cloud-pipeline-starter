@@ -60,15 +60,15 @@ O `cd.yml` da base usava runner hospedado do GitHub com SSH, o que exigiria abri
 
 ## 8. Custos e recursos
 
-A instância foi parada e reiniciada algumas vezes por limitações do ambiente do laboratório (4 inicializações no total). O tempo ligada foi obtido pelas inicializações registradas no próprio sistema (`journalctl --list-boots`) e totalizou aproximadamente **11,5 horas**. Os valores abaixo são **estimativas** com base nos preços de tabela sob demanda (us-east-1).
+A instância foi parada e reiniciada algumas vezes por limitações do ambiente do laboratório (4 inicializações no total). O tempo ligada foi obtido pelas inicializações registradas no próprio sistema (`journalctl --list-boots` e `uptime -s`) e totalizou aproximadamente **13,8 horas**. Os valores abaixo são **estimativas** com base nos preços de tabela sob demanda (us-east-1).
 
 | Recurso | Uso | Custo estimado |
 |---|---|---|
-| EC2 t3.micro (Linux) | 11,5 h ligada | 11,5 h × US$ 0,0104/h ≈ US$ 0,12 |
-| EBS gp3 8 GiB | cerca de 23 h (da criação à exclusão) | 8 GB × US$ 0,08/GB-mês × 23/730 ≈ US$ 0,02 |
-| IPv4 público | 11,5 h associado à instância | 11,5 h × US$ 0,005/h ≈ US$ 0,06 |
+| EC2 t3.micro (Linux) | 13,8 h ligada | 13,8 h × US$ 0,0104/h ≈ US$ 0,14 |
+| EBS gp3 8 GiB | cerca de 26 h (da criação à exclusão) | 8 GB × US$ 0,08/GB-mês × 26/730 ≈ US$ 0,02 |
+| IPv4 público | 13,8 h associado à instância | 13,8 h × US$ 0,005/h ≈ US$ 0,07 |
 | GHCR / GitHub Actions | repositório público, plano gratuito | sem custo |
-| **Total estimado** | | **≈ US$ 0,20** |
+| **Total estimado** | | **≈ US$ 0,23** |
 
 O consumo real foi debitado do orçamento do laboratório: o painel mostrou US$ 28,60 utilizados de US$ 50,00. O valor do painel acumula todo o uso da conta do laboratório, e não apenas este projeto, por isso é maior que a estimativa acima.
 
