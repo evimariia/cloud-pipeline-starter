@@ -72,7 +72,9 @@ A instância foi parada e reiniciada algumas vezes por limitações do ambiente 
 
 O consumo real foi debitado do orçamento do laboratório: o painel mostrou US$ 28,60 utilizados de US$ 50,00. O valor do painel acumula todo o uso da conta do laboratório, e não apenas este projeto, por isso é maior que a estimativa acima.
 
-Todos os recursos foram **encerrados** ao fim do trabalho: [prints da instância terminada, volumes e runner removido].
+Todos os recursos foram **encerrados** ao fim do trabalho:
+<img width="1906" height="903" alt="image" src="https://github.com/user-attachments/assets/7f745d87-1610-4dab-9edc-29f97a36ef40" />
+
 
 ## 9. Dificuldades
 - Repositório criado com a pasta do projeto aninhada: o GitHub não achou `.github/workflows` e a CI não rodou. Corrigido recriando o repositório git na pasta interna.
@@ -81,10 +83,11 @@ Todos os recursos foram **encerrados** ao fim do trabalho: [prints da instância
 - `docker ps` com `permission denied` logo após a instalação: o grupo `docker` só vale em nova sessão.
 - O IP público da instância mudou entre sessões do laboratório; o deploy pelo runner não depende do IP.
 
-## 10. Evidências
 | # | Evidência | Link |
 |---|---|---|
-| 1 | Pull Request com CI verde e revisão | [[link do PR](https://github.com/evimariia/cloud-pipeline-starter/pull/1)] |
-| 2 | Run de CI aprovado (PR) | [[link](https://github.com/evimariia/cloud-pipeline-starter/actions/runs/43710879313)] |
-| 3 | Run de CD aprovado | [[link](https://github.com/evimariia/cloud-pipeline-starter/actions/runs/43710950985)] |
-| 4 | Pacote no GHCR com tag = SHA do commit | [cloud-pipeline-starter](https://github.com/evimariia/cloud-pipeline-starter/pkgs/container/cloud-pipeline-starter) |
+| 1 | Pull Request da funcionalidade, com CI verde e revisão | [PR #1](https://github.com/evimariia/cloud-pipeline-starter/pull/1) |
+| 2 | Run de CI aprovado (PR) | [CI do PR](https://github.com/evimariia/cloud-pipeline-starter/actions/runs/43710879313) |
+| 3 | Run de CI na `main` (publica a imagem) | [CI na main](https://github.com/evimariia/cloud-pipeline-starter/actions/runs/43778928600) |
+| 4 | Run de CD aprovado | [CD](https://github.com/evimariia/cloud-pipeline-starter/actions/runs/43710950985) |
+| 5 | Pacote no GHCR com tag = SHA do commit | [cloud-pipeline-starter](https://github.com/evimariia/cloud-pipeline-starter/pkgs/container/cloud-pipeline-starter) |
+| 6 | Pull Request da documentação | [PR #2](https://github.com/evimariia/cloud-pipeline-starter/pull/2) |
